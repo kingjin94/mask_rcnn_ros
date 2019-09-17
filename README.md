@@ -83,3 +83,5 @@ Then RViz window will appear and show result like following:
 
 ## Contributions
 Adapted it to work with new tensorflow version (1.14), new CUDA (10.0) and libCUDNN (7.\*) on a RTX 2080
+
+Espacially along: https://stackoverflow.com/questions/41762272/use-tensorflow-gpuoptions-within-keras-when-using-tensorflow-backend & https://github.com/tensorflow/tensorflow/issues/24496
