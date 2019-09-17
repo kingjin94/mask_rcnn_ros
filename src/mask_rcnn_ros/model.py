@@ -27,6 +27,7 @@ import keras.layers as KL
 import keras.initializers as KI
 import keras.engine as KE
 import keras.models as KM
+import keras.backend.tensorflow_backend as ktf
 
 import utils
 
@@ -1733,6 +1734,7 @@ class MaskRCNN():
         self.model_dir = model_dir
         self.set_log_dir()
         self.keras_model = self.build(mode=mode, config=config)
+        self.session = ktf.set_session(tf.Session(config=tf.ConfigProto(gpu_options=tf.GPUOptions(per_process_gpu_memory_fraction=0.5,allow_growth=True))))
 
     def build(self, mode, config):
         """Build Mask R-CNN architecture.

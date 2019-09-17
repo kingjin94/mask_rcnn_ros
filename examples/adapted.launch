@@ -1,0 +1,8 @@
+<launch>
+    <node name="mask_rcnn" pkg="mask_rcnn_ros" type="mask_rcnn_node" output="screen">
+        <remap from="~input" to="/panda/depth_camera/image" />
+        <remap from="~result" to="/panda/depth_camera/image/seg_res" />
+        <remap from="~visualization" to="/panda/depth_camera/image/seg" />
+        <param name="~visualization" value="true" />
+    </node>
+</launch>
