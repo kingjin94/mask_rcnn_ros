@@ -80,3 +80,6 @@ Then RViz window will appear and show result like following:
 ![example1](doc/mask_r-cnn_1.png)
 
 ![example2](doc/mask_r-cnn_2.png)
+
+## Contributions
+Adapted it to work with new tensorflow version (1.14), new CUDA (10.0) and libCUDNN (7.\*) on a RTX 2080
