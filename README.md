@@ -82,6 +82,8 @@ Then RViz window will appear and show result like following:
 ![example2](doc/mask_r-cnn_2.png)
 
 ## Contributions
+Used as a package in https://github.com/kingjin94/enhanced_simulation.
+
 Adapted it to work with new tensorflow version (1.14), new CUDA (10.0) and libCUDNN (7.\*) on a RTX 2080
 
 Espacially along: https://stackoverflow.com/questions/41762272/use-tensorflow-gpuoptions-within-keras-when-using-tensorflow-backend & https://github.com/tensorflow/tensorflow/issues/24496
